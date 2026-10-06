@@ -14,7 +14,7 @@ FEATURES
 - English, German, Spanish, French, Hungarian, Polish, Ukrainian, Russian, Czech, Serbian and Croatian.
 
 REQUIREMENTS AND INSTALLATION
-Windows 11 x64. Download the Windows ZIP manually, extract it completely to a writable folder and run CartelDesk.exe. Keep the DLLs, web, platforms and licenses folders together. No separate Qt, Node.js or Python installation is required.
+Windows 11 x64. Download the Windows ZIP manually, extract it completely to a writable folder and run CartelDesk.exe. Keep the runtime, web and licenses folders together. No separate Qt, Node.js or Python installation is required.
 
 This package is a standalone tool, not a game-folder mod or Vortex game extension. Use manual extraction and launch it separately; automatic Vortex deployment is not provided.
 
@@ -43,3 +43,5 @@ Map and data from drugdealersim.com — https://drugdealersim.com/
 
 Unofficial companion. Not endorsed by or affiliated with drugdealersim.com, TGS, ByteRunners or Movie Games SA.
 Reference data checked 2026-10-06; visit the live wiki for current data during its ongoing audit. Currency: Bolivars (B).
+
+New in v1.0.1: choose the companion IP address and scan a locally generated QR code. Click it for a larger view with a size slider. One top-level CartelDesk.exe; Qt dependencies and backend are grouped in runtime/. The desktop stops its owned server on exit, including forced termination. Keep the runtime, web and licenses folders together after extracting.

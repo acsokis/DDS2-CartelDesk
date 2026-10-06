@@ -8,8 +8,8 @@
 
 ## Get started
 
-1. Download **DDS2-CartelDesk-v1.0.0-Windows-x64.zip** from Releases.
-2. Extract the entire ZIP into a writable folder. Keep its DLLs, web, platforms and licenses folders together.
+1. Download **DDS2-CartelDesk-v1.0.1-Windows-x64.zip** from Releases.
+2. Extract the entire ZIP into a writable folder. Keep its runtime, web and licenses folders together. CartelDesk.exe is the only executable in the top-level folder; DLLs and the backend are grouped in runtime/.
 3. Open **CartelDesk.exe**. The native window starts its own local server.
 4. Use **Start / Stop** to control the server. Closing the window stops its server.
 
@@ -50,6 +50,12 @@ Fog-of-war is enabled in the native app, desktop web and phone companion. It rev
 
 The mask uses saved discovery flags and coordinates; it is **not the game's pixel exploration mask**. Unknown coordinates, prices, recipe yields and equipment compatibility remain unknown. Public shop/loot information describes possible locations, not current stock. Transfer lines are straight-line estimates, not verified road routes. Saved demand does not prove an active order.
 
+## Companion QR and server lifecycle
+
+Enable companion access and start the service. On the Overview tab, choose the local IP address of the adapter shared with your phone, then scan its QR code. Click the QR card to open a larger window and use the size slider; closing it leaves the card in its original place. The chosen address is remembered. The phone and PC must share a private network, and Windows Firewall must allow companion access. QR codes are generated locally, without sending the URL to an external service.
+
+The backend runs in the background while the desktop is open. Stop ends the owned server; closing the desktop also stops it. A parent-process watcher terminates the server if the desktop is forcibly terminated, even during an incomplete network request.
+
 ## Screenshots
 
 These are actual application captures using demonstration save data. Local filesystem paths and adapter addresses have been removed from the presentation. The visible map remains behind fog-of-war.
@@ -57,6 +63,10 @@ These are actual application captures using demonstration save data. Local files
 **Windows desktop**
 
 ![Native DDS2 CartelDesk window with Start and Stop](media/screenshots/desktop.png)
+
+**Enlarged companion QR**
+
+![Companion QR popup with size control and example LAN address](media/screenshots/desktop-qr.png)
 
 **Recipes and equipment**
 
@@ -80,7 +90,7 @@ These are actual application captures using demonstration save data. Local files
 
 ## Media & post kit
 
-[Open the media kit](media/README.md) or download **DDS2-CartelDesk-v1.0.0-Media.zip** from [Releases](https://github.com/acsokis/DDS2-CartelDesk/releases/latest).
+[Open the media kit](media/README.md) or download **DDS2-CartelDesk-v1.0.1-Media.zip** from [Releases](https://github.com/acsokis/DDS2-CartelDesk/releases/latest).
 
 It contains original screenshots, a 1200 × 675 wide cover, a 1080 × 1080 square cover, and ready-to-copy English posts for **Steam Discussions**, **LinkedIn**, and **Nexus Mods / Vortex**. These are posting drafts; they have not been posted to those platforms.
 
@@ -100,7 +110,7 @@ Game reference data: [Isla Sombra map](https://drugdealersim.com/map), [recipes]
 
 ## Validation
 
-35 automated checks passed on Windows x64, including parser compatibility, stock allocation, capacity, read-only saves, Unicode, private-LAN access, 11 languages, recipe planning, fog-of-war markers, CSV ZIP integrity, and the real Qt Start / Stop lifecycle. Desktop web and portrait companion screenshots were also checked for JavaScript errors and horizontal overflow. Physical-phone touch testing has not been performed.
+37 automated Windows checks passed on Windows x64, including parser compatibility, stock allocation, capacity, read-only saves, Unicode, private-LAN access, 11 languages, recipe planning, fog-of-war markers, CSV ZIP integrity, and the real Qt Start / Stop lifecycle, normal/forced desktop closure during a partial HTTP request, and QR decoding from the actual card and enlarged images. Desktop web and portrait companion screenshots were also checked for JavaScript errors and horizontal overflow. Physical-phone touch testing has not been performed.
 
 ## Magyar gyorsindítás
 

@@ -9,6 +9,7 @@
 | [cover-wide.png](cover-wide.png) | 1200 × 675; wide post, README cover or thumbnail |
 | [cover-square.png](cover-square.png) | 1080 × 1080; square social post |
 | [Desktop](screenshots/desktop.png) | 1240 × 850; native Start / Stop window |
+| [Companion QR](screenshots/desktop-qr.png) | Enlarged native QR dialog with size slider; example address |
 | [Inventory](screenshots/desktop-inventory.png) | 1240 × 850; native table |
 | [Native recipes](screenshots/desktop-recipes.png) | 1240 × 850; ingredients and equipment |
 | [Native About](screenshots/desktop-about.png) | 1240 × 850; credits and wiki attribution |
@@ -46,3 +47,5 @@ Reference data checked 2026-10-06; visit the live wiki for current data during i
 When sharing a post, keep both the wiki credit/link and the non-affiliation statement. Wiki permission covers its map render and curation, not underlying game IP or contributed guide prose.
 
 Media refreshed: 2026-10-06. All captures show the current application. Covers include the wiki credit directly on the image; keep attribution when publishing.
+
+Current release: v1.0.1. Native screenshots show the selectable companion IP and QR card. The QR popup uses a documented example LAN address, not a working public demonstration endpoint. The Windows package has one top-level CartelDesk.exe and a runtime folder containing its Qt dependencies and backend. The owned server stops when the desktop closes or is terminated.

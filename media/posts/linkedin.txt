@@ -16,3 +16,5 @@ Map and data from drugdealersim.com — https://drugdealersim.com/
 
 Unofficial companion. Not endorsed by or affiliated with drugdealersim.com, TGS, ByteRunners or Movie Games SA.
 Reference data checked 2026-10-06; visit the live wiki for current data during its ongoing audit. Currency: Bolivars (B).
+
+New in v1.0.1: choose the companion IP address and scan a locally generated QR code. Click it for a larger view with a size slider. One top-level CartelDesk.exe; Qt dependencies and backend are grouped in runtime/. The desktop stops its owned server on exit, including forced termination. Keep the runtime, web and licenses folders together after extracting.
