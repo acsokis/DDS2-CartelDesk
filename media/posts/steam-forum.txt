@@ -1,0 +1,23 @@
+TITLE: DDS2 CartelDesk — local save planner, recipes, fog-of-war map and phone companion
+
+I've made DDS2 CartelDesk, an unofficial Windows companion for Drug Dealer Simulator 2.
+
+It reads your save without changing it and brings your inventory, ingredients, equipment and logistics into one local planning desk. There is a native desktop window with Start / Stop, a desktop web interface and a portrait phone companion for the same Wi-Fi network.
+
+Features:
+- 187 documented in-game recipes, ingredients and saved production equipment.
+- Stock-transfer and production planning that reserves customer demand first.
+- Isla Sombra map with discovery-based fog-of-war in every interface.
+- Saved distributor assignments, orders, stock and storage capacity.
+- CSV and ZIP export, plus 11 languages selected from your system or browser.
+
+Download: https://github.com/acsokis/DDS2-CartelDesk/releases/latest
+Screenshots and details: https://github.com/acsokis/DDS2-CartelDesk
+
+Extract the whole Windows ZIP and run CartelDesk.exe. For a phone, enable LAN companion and open the PC address shown in the app.
+
+This is a planning tool: it does not perform game actions. Unknown yields, prices or equipment compatibility stay unknown. The map uses saved known places rather than the game's pixel exploration mask, and transfer distances are straight-line estimates.
+
+Feedback and reproducible bug reports are welcome through GitHub Issues. Please do not attach personal save files publicly; include the app version and error message first.
+
+Gábor Kocsis (acsokis)

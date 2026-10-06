@@ -1,0 +1,13 @@
+I've released DDS2 CartelDesk, a local Windows planning companion for Drug Dealer Simulator 2.
+
+The project connects a C17 save parser with a C++17 / Qt 6.12 Widgets desktop application and desktop/phone web interfaces. Its native window manages the local server with Start / Stop; the phone interface works on the same Wi-Fi network.
+
+The interesting engineering work was keeping the data consistent across all interfaces: allocating each stock once, reserving customer demand before production, sharing storage capacity, preserving unknown values and revealing only saved known map locations.
+
+The release includes 187 in-game recipes, production and logistics planning, CSV/ZIP export and 11 languages. Game saves are read-only. AI coding assistance supported development alongside Windows builds and 35 automated checks.
+
+Download and screenshots: https://github.com/acsokis/DDS2-CartelDesk
+
+The application's native source remains private; the public GitHub repository contains release information and media. This is an unofficial game companion, not an official DDS2 product.
+
+#Cpp #CProgramming #Qt #WindowsDevelopment #GameTools #IndieDevelopment

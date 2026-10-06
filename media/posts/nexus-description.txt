@@ -1,0 +1,40 @@
+NAME: DDS2 CartelDesk
+SUMMARY: Standalone Windows save-reading planner for DDS2, with recipes, logistics, a discovery-based fog-of-war map and a phone companion.
+
+DESCRIPTION
+DDS2 CartelDesk is an unofficial desktop utility for Drug Dealer Simulator 2. It reads your local save without editing it and helps you review stock, recipe ingredients, installed production equipment, saved distributors and material-transfer plans.
+
+FEATURES
+- Native Windows desktop window with managed Start / Stop.
+- 187 documented in-game recipes and production planning.
+- Customer demand reserved before production; shared saved storage capacity.
+- Isla Sombra map with fog-of-war based on explicit saved discovery/ownership.
+- Portrait phone web companion on the same private Wi-Fi network.
+- Filtered CSV and full-table CSV ZIP exports.
+- English, German, Spanish, French, Hungarian, Polish, Ukrainian, Russian, Czech, Serbian and Croatian.
+
+REQUIREMENTS AND INSTALLATION
+Windows 11 x64. Download the Windows ZIP manually, extract it completely to a writable folder and run CartelDesk.exe. Keep the DLLs, web, platforms and licenses folders together. No separate Qt, Node.js or Python installation is required.
+
+This package is a standalone tool, not a game-folder mod or Vortex game extension. Use manual extraction and launch it separately; automatic Vortex deployment is not provided.
+
+SAVES AND PHONE CONNECTION
+The default DDS2 save directory is %LOCALAPPDATA%\DrugDealerSimulator2\Saved\SaveGames\Cartels. Choose another folder or save in Settings. Game saves are read-only; plans and preferences are stored separately.
+
+Enable the phone companion on LAN, keep the PC application running and open the displayed private-IP /companion address from a phone on the same Wi-Fi. The optional network script requires administrator rights and only allows the local subnet on private networks at port 8765.
+
+LIMITATIONS
+Unknown coordinates, prices, yields and equipment compatibility remain unknown. Fog-of-war uses saved known places, not the game's pixel exploration mask. Transfer distances are straight-line estimates. Saved demand does not prove an active order. No game actions are performed. Physical-phone touch testing has not been performed.
+
+DOWNLOAD, SUPPORT AND MEDIA
+https://github.com/acsokis/DDS2-CartelDesk/releases/latest
+https://github.com/acsokis/DDS2-CartelDesk/issues
+https://github.com/acsokis/DDS2-CartelDesk/tree/main/media
+
+CREDITS
+Gábor Kocsis (acsokis)
+https://github.com/acsokis
+https://www.instagram.com/gabor_carter/
+https://www.linkedin.com/in/gabor-web/
+
+Built with C17, C++17 / Qt 6.12 Widgets and local web interfaces, with AI coding assistance and Windows regression checks. The native application source is private. Third-party licenses and corresponding Qt source are bundled with the distribution. Unofficial DDS2 companion; not affiliated with the game's creators.

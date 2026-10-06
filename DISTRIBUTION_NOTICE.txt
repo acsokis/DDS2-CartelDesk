@@ -1,0 +1,9 @@
+DDS2 CartelDesk
+Copyright 2026 Gábor Kocsis (acsokis).
+
+This public repository contains distribution documentation and media.
+The author's native C/C++ application source is not published or licensed as open source.
+Browser runtime assets are included in the application download because its local web interfaces require them.
+Third-party components retain their own licenses; see THIRD_PARTY_NOTICES.txt and licenses/ in the distribution.
+The included unmodified Qt source archive is third-party corresponding source, not CartelDesk application source.
+DDS2 CartelDesk is an unofficial companion for Drug Dealer Simulator 2.
