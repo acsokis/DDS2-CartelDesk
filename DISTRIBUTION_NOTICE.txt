@@ -7,3 +7,10 @@ Browser runtime assets are included in the application download because its loca
 Third-party components retain their own licenses; see THIRD_PARTY_NOTICES.txt and licenses/ in the distribution.
 The included unmodified Qt source archive is third-party corresponding source, not CartelDesk application source.
 DDS2 CartelDesk is an unofficial companion for Drug Dealer Simulator 2.
+
+Map and reference data from drugdealersim.com — https://drugdealersim.com/
+Map and data from drugdealersim.com
+Sourced from drugdealersim.com
+
+Unofficial companion. Not endorsed by or affiliated with drugdealersim.com, TGS, ByteRunners or Movie Games SA.
+Reference data checked 2026-10-06; visit the live wiki for current data during its ongoing audit. Currency: Bolivars (B).

@@ -101,3 +101,12 @@ Game reference data: [Isla Sombra map](https://drugdealersim.com/map), [recipes]
 ## Magyar gyorsindítás
 
 Töltsd le a Windows ZIP-et, csomagold ki teljesen, és indítsd a **CartelDesk.exe** fájlt. A Start / Stop gomb vezérli a háttérszervert; az ablak bezárása leállítja. A program a valódi DDS2 mentési mappát keresi, és a játékmentést kizárólag olvassa. Telefonon ugyanazon a Wi-Fi-n az ablakban megjelenő /companion címet nyisd meg. A felületen magyar nyelv is választható.
+
+Map and reference data from drugdealersim.com — https://drugdealersim.com/
+Map and data from drugdealersim.com
+Sourced from drugdealersim.com
+
+Unofficial companion. Not endorsed by or affiliated with drugdealersim.com, TGS, ByteRunners or Movie Games SA.
+Reference data checked 2026-10-06; visit the live wiki for current data during its ongoing audit. Currency: Bolivars (B).
+
+The wiki operator permits bundling and screenshots of its map render and curation with attribution. This permission does not license the underlying game developer rights or contributed guide prose. No Steam-imported guide text is bundled. The reference snapshot is due for review on 2026-10-20; this is a planned maintenance date, not an automatic synchronization. If the wiki operator requests removal of its materials, those materials will be removed from the distribution.

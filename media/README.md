@@ -29,3 +29,12 @@ All screenshots are actual application captures using demonstration data. Public
 These are drafts for the author to post. No Steam, LinkedIn or Nexus post has been published automatically. Keep the game-only context, read-only save statement, unknown-data limitations, author credit and project download link when reposting. Do not present CartelDesk as an official DDS2 product.
 
 Author: Gábor Kocsis (acsokis). [GitHub](https://github.com/acsokis) · [Instagram](https://www.instagram.com/gabor_carter/) · [LinkedIn](https://www.linkedin.com/in/gabor-web/).
+
+Map and reference data from drugdealersim.com — https://drugdealersim.com/
+Map and data from drugdealersim.com
+Sourced from drugdealersim.com
+
+Unofficial companion. Not endorsed by or affiliated with drugdealersim.com, TGS, ByteRunners or Movie Games SA.
+Reference data checked 2026-10-06; visit the live wiki for current data during its ongoing audit. Currency: Bolivars (B).
+
+When sharing a post, keep both the wiki credit/link and the non-affiliation statement. Wiki permission covers its map render and curation, not underlying game IP or contributed guide prose.
