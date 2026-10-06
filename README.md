@@ -52,7 +52,7 @@ The mask uses saved discovery flags and coordinates; it is **not the game's pixe
 
 ## Companion QR and server lifecycle
 
-Enable companion access and start the service. On the Overview tab, choose the local IP address of the adapter shared with your phone, then scan its QR code. Click the QR card to open a larger window and use the size slider; closing it leaves the card in its original place. The chosen address is remembered. The phone and PC must share a private network, and Windows Firewall must allow companion access. QR codes are generated locally, without sending the URL to an external service.
+Enable companion access and start the service. In the upper-right companion card on the Command Desk tab, choose the local IP address of the adapter shared with your phone, then scan its QR code. Click the QR card to open a larger window and use the size slider; closing it leaves the card in its original place. The chosen address is remembered. The phone and PC must share a private network, and Windows Firewall must allow companion access. QR codes are generated locally, without sending the URL to an external service.
 
 The backend runs in the background while the desktop is open. Stop ends the owned server; closing the desktop also stops it. A parent-process watcher terminates the server if the desktop is forcibly terminated, even during an incomplete network request.
 

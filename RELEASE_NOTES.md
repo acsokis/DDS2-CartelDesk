@@ -2,7 +2,7 @@
 
 Windows x64 update: native Qt 6.12 Widgets desktop, desktop web and portrait phone companion.
 
-- Companion QR with selectable LAN IP, enlarged dialog and size slider; remembered address.
+- Upper-right Command Desk companion card: QR with selectable LAN IP, enlarged dialog and size slider; remembered address.
 - One top-level CartelDesk.exe; Qt dependencies and backend grouped in runtime/.
 - Parent-process watcher ends orphan servers even during incomplete network requests.
 - README, screenshots, covers and posting drafts refreshed.
