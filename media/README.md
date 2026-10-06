@@ -49,3 +49,5 @@ When sharing a post, keep both the wiki credit/link and the non-affiliation stat
 Media refreshed: 2026-10-06. All captures show the current application. Covers include the wiki credit directly on the image; keep attribution when publishing.
 
 Current release: v1.0.1. Native screenshots show the selectable companion IP and QR card. The QR popup uses a documented example LAN address, not a working public demonstration endpoint. The Windows package has one top-level CartelDesk.exe and a runtime folder containing its Qt dependencies and backend. The owned server stops when the desktop closes or is terminated.
+
+Official DDS2 icon: sourced from the [game’s Steam community page](https://steamcommunity.com/app/1708850/), used as the Windows application/browser icon and in the QR centre. QR codes use high error correction; both the displayed card and enlarged output are checked by decoding. The artwork belongs to its respective rights holders. Wiki permission covers its map and curation, not game artwork or underlying game IP; no endorsement is implied.

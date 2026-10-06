@@ -126,3 +126,5 @@ Unofficial companion. Not endorsed by or affiliated with drugdealersim.com, TGS,
 Reference data checked 2026-10-06; visit the live wiki for current data during its ongoing audit. Currency: Bolivars (B).
 
 The wiki operator permits bundling and screenshots of its map render and curation with attribution. This permission does not license the underlying game developer rights or contributed guide prose. No Steam-imported guide text is bundled. The reference snapshot is due for review on 2026-10-20; this is a planned maintenance date, not an automatic synchronization. If the wiki operator requests removal of its materials, those materials will be removed from the distribution.
+
+Official DDS2 icon: sourced from the [game’s Steam community page](https://steamcommunity.com/app/1708850/), used as the Windows application/browser icon and in the QR centre. QR codes use high error correction; both the displayed card and enlarged output are checked by decoding. The artwork belongs to its respective rights holders. Wiki permission covers its map and curation, not game artwork or underlying game IP; no endorsement is implied.
