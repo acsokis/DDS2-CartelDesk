@@ -15,9 +15,11 @@ Download **DDS2-CartelDesk-v1.0.0-Windows-x64.zip**, extract all files, then run
 
 The public repository contains documentation/media only. Native application source remains private. The Qt source archive in the Windows ZIP is third-party corresponding source required for redistribution.
 
-Map and reference data from drugdealersim.com — https://drugdealersim.com/
+## Wiki attribution and updates
+
+[Map and reference data from drugdealersim.com](https://drugdealersim.com/)
+
 Map and data from drugdealersim.com
-Sourced from drugdealersim.com
 
 Unofficial companion. Not endorsed by or affiliated with drugdealersim.com, TGS, ByteRunners or Movie Games SA.
 Reference data checked 2026-10-06; visit the live wiki for current data during its ongoing audit. Currency: Bolivars (B).

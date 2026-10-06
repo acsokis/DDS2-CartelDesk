@@ -66,6 +66,10 @@ These are actual application captures using demonstration save data. Local files
 
 ![Native map showing only saved known places](media/screenshots/desktop-map.png)
 
+**About and wiki credits**
+
+![About view with wiki attribution and non-affiliation notice](media/screenshots/desktop-about.png)
+
 **Phone companion**
 
 <p>
@@ -102,9 +106,11 @@ Game reference data: [Isla Sombra map](https://drugdealersim.com/map), [recipes]
 
 Töltsd le a Windows ZIP-et, csomagold ki teljesen, és indítsd a **CartelDesk.exe** fájlt. A Start / Stop gomb vezérli a háttérszervert; az ablak bezárása leállítja. A program a valódi DDS2 mentési mappát keresi, és a játékmentést kizárólag olvassa. Telefonon ugyanazon a Wi-Fi-n az ablakban megjelenő /companion címet nyisd meg. A felületen magyar nyelv is választható.
 
-Map and reference data from drugdealersim.com — https://drugdealersim.com/
+## Wiki attribution and updates
+
+[Map and reference data from drugdealersim.com](https://drugdealersim.com/)
+
 Map and data from drugdealersim.com
-Sourced from drugdealersim.com
 
 Unofficial companion. Not endorsed by or affiliated with drugdealersim.com, TGS, ByteRunners or Movie Games SA.
 Reference data checked 2026-10-06; visit the live wiki for current data during its ongoing audit. Currency: Bolivars (B).

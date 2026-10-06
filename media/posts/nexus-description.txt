@@ -39,9 +39,7 @@ https://www.linkedin.com/in/gabor-web/
 
 Built with C17, C++17 / Qt 6.12 Widgets and local web interfaces, with AI coding assistance and Windows regression checks. The native application source is private. Third-party licenses and corresponding Qt source are bundled with the distribution. Unofficial DDS2 companion; not affiliated with the game's creators.
 
-Map and reference data from drugdealersim.com — https://drugdealersim.com/
-Map and data from drugdealersim.com
-Sourced from drugdealersim.com
+Map and data from drugdealersim.com — https://drugdealersim.com/
 
 Unofficial companion. Not endorsed by or affiliated with drugdealersim.com, TGS, ByteRunners or Movie Games SA.
 Reference data checked 2026-10-06; visit the live wiki for current data during its ongoing audit. Currency: Bolivars (B).

@@ -12,9 +12,7 @@ The application's native source remains private; the public GitHub repository co
 
 #Cpp #CProgramming #Qt #WindowsDevelopment #GameTools #IndieDevelopment
 
-Map and reference data from drugdealersim.com — https://drugdealersim.com/
-Map and data from drugdealersim.com
-Sourced from drugdealersim.com
+Map and data from drugdealersim.com — https://drugdealersim.com/
 
 Unofficial companion. Not endorsed by or affiliated with drugdealersim.com, TGS, ByteRunners or Movie Games SA.
 Reference data checked 2026-10-06; visit the live wiki for current data during its ongoing audit. Currency: Bolivars (B).
