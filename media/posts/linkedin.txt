@@ -1,24 +1,28 @@
-I've released DDS2 CartelDesk, a local Windows planning companion for Drug Dealer Simulator 2.
+DDS2 CartelDesk v1.1.0 — a local desktop and phone planning companion for Drug Dealer Simulator 2.
 
-The project connects a C17 save parser with a C++17 / Qt 6.12 Widgets desktop application and desktop/phone web interfaces. Its native window manages the local server with Start / Stop; the phone interface works on the same Wi-Fi network.
+I built a C17 backend and C++17 Qt desktop app with a responsive browser companion. The workflow combines read-only campaign data, 187 recipe references, production equipment, owned stock and independent acquisition sources.
 
-The interesting engineering work was keeping the data consistent across all interfaces: allocating each stock once, reserving customer demand before production, sharing storage capacity, preserving unknown values and revealing only saved known map locations.
+This update replaces inferred exploration with the game's FOW_Target.exr mask, adds optional fog sharing and external map pings, and improves map movement and typed filters. Planner lists support quantities, save / load, favorites, filtering and removal. A local QR code connects the phone interface.
 
-The release includes 187 in-game recipes, production and logistics planning, CSV/ZIP export and 11 languages. Game saves are read-only. AI coding assistance supported development alongside Windows builds and 35 automated checks.
+The app is free to download. Public distribution contains the runtime, documentation and screenshots; application source remains private. Known and unknown data remain distinct. No gameplay automation or full-save network import is included.
 
-Download and screenshots: https://github.com/acsokis/DDS2-CartelDesk
+I'm available to discuss companion tools, desktop interfaces and data-driven planning utilities for other games.
 
-The application's native source remains private; the public GitHub repository contains release information and media. This is an unofficial game companion, not an official DDS2 product.
+Suggested carousel: cover-square.png, desktop.png, desktop-map-detail.png, web-planner-list.png, companion-recipes.png.
 
-#Cpp #CProgramming #Qt #WindowsDevelopment #GameTools #IndieDevelopment
+Download: https://github.com/acsokis/DDS2-CartelDesk/releases/latest
+Project: https://github.com/acsokis/DDS2-CartelDesk
 
-Map and data from drugdealersim.com — https://drugdealersim.com/
+Map and reference data from drugdealersim.com — https://drugdealersim.com/
+Map and data from drugdealersim.com
+Unofficial companion. Not endorsed by or affiliated with drugdealersim.com, TGS, ByteRunners or Movie Games SA. Game data belongs to the game's developers. The wiki is mid-audit; visit the live site for current figures. Currency is Bolivars (B).
 
-Unofficial companion. Not endorsed by or affiliated with drugdealersim.com, TGS, ByteRunners or Movie Games SA.
-Reference data checked 2026-10-06; visit the live wiki for current data during its ongoing audit. Currency: Bolivars (B).
+Gábor Kocsis (acsokis)
+GitHub: https://github.com/acsokis
+Instagram: https://www.instagram.com/gabor_carter/
+LinkedIn: https://www.linkedin.com/in/gabor-web/
 
-New in v1.0.1: choose the companion IP address and scan a locally generated QR code. Click it for a larger view with a size slider. One top-level CartelDesk.exe; Qt dependencies and backend are grouped in runtime/. The desktop stops its owned server on exit, including forced termination. Keep the runtime, web and licenses folders together after extracting.
+Development scope: 131 unique acceptance requirements consolidated from 190 historical source points. Secure peer sessions, live delta integration and full-save transfer UI / recovery are still pending. This release shares pings on the same LAN host and supports explicit ping JSON exchange between separate hosts.
 
-Companion QR includes the official DDS2 icon from https://steamcommunity.com/app/1708850/. The game artwork belongs to its respective rights holders; this remains an unofficial companion, with no endorsement implied.
 
-The companion QR, IP selector and URL are grouped in a dedicated card at the upper-right of Command Desk. Click the QR for the enlarged view.
+#GameDevelopment #Cpp #Qt #DesktopApps #UXDesign #DrugDealerSimulator2

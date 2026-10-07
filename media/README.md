@@ -1,53 +1,40 @@
-# DDS2 CartelDesk media kit
+# DDS2 CartelDesk media kit — v1.1.0
 
-[Download the application](https://github.com/acsokis/DDS2-CartelDesk/releases/latest) · [Project page](https://github.com/acsokis/DDS2-CartelDesk)
+[Download the latest Windows release](https://github.com/acsokis/DDS2-CartelDesk/releases/latest) · [Project](https://github.com/acsokis/DDS2-CartelDesk)
 
 ## Images
 
-| File | Size / purpose |
+| Image | Use |
 | --- | --- |
-| [cover-wide.png](cover-wide.png) | 1200 × 675; wide post, README cover or thumbnail |
-| [cover-square.png](cover-square.png) | 1080 × 1080; square social post |
-| [Desktop](screenshots/desktop.png) | 1240 × 850; native Start / Stop window |
-| [Companion QR](screenshots/desktop-qr.png) | Enlarged native QR dialog with size slider; example address |
-| [Inventory](screenshots/desktop-inventory.png) | 1240 × 850; native table |
-| [Native recipes](screenshots/desktop-recipes.png) | 1240 × 850; ingredients and equipment |
-| [Native About](screenshots/desktop-about.png) | 1240 × 850; credits and wiki attribution |
-| [Native map](screenshots/desktop-map.png) | 1240 × 850; fog-of-war |
-| [Desktop web recipes](screenshots/web-recipes.png) | 1600 × 1000; recipe catalogue |
-| [Web logistics](screenshots/web-logistics.png) | 1600 × 1000; stock-transfer planning |
-| [Web About](screenshots/web-about.png) | 1600 × 1000; build description and source credits |
-| [Phone overview](screenshots/companion-overview.png) | 1075 × 2330; portrait companion |
-| [Phone recipes](screenshots/companion-recipes.png) | 1075 × 2330; recipe detail |
-| [Phone map](screenshots/companion-map.png) | 1075 × 2330; discovery-based map |
-| [Phone About](screenshots/companion-about.png) | 1075 × 2330; companion source credits |
+| [Wide cover](cover-wide.png) | 1200 × 675 social post or README |
+| [Square cover](cover-square.png) | 1080 × 1080 social post |
+| [Desktop](screenshots/desktop.png) | Actual native command desk, Start / Stop and QR |
+| [Native map](screenshots/desktop-map-detail.png) | FOW_Target.exr terrain, markers and legend |
+| [Native ping controls](screenshots/desktop-ping-dialog.png) | Sets, lifetime, multi-selection, import / export |
+| [Web map and pings](screenshots/web-map-pings.png) | Red triangles, route stops and visible legend |
+| [Planner lists](screenshots/web-planner-list.png) | Save, load, favorites, quantities and removal |
+| [Acquisition sources](screenshots/web-planner-sources.png) | Ownership and purchase locations separately |
+| [Native recipes](screenshots/desktop-recipes.png) | Ingredients and production equipment |
+| [Phone map](screenshots/companion-map.png) | Portrait companion with game exploration mask |
+| [Phone recipes](screenshots/companion-recipes.png) | Recipe requirements on a portrait screen |
+| [About](screenshots/desktop-about.png) | Author and source credits |
 
-All screenshots are actual application captures using demonstration data. Public previews omit local filesystem paths and private adapter addresses. Map captures keep fog-of-war enabled. The cover images combine those screenshots with descriptive text; no game UI or functionality was invented.
+Screenshots capture the running application with an isolated demonstration profile. Covers compose these captures and descriptive text. Local save paths and private adapter addresses are omitted. The map uses the read-only game FOW_Target.exr mask. Missing masks keep the terrain covered; fog can be switched off in the view. Exploration sharing is optional and off by default.
 
+This update includes planner add / remove / save / favorites / reset, independent owned-inventory and acquisition-source filters, persistent map legend and empty states, cached native terrain and debounced filters. External red triangle pings have sets, multi-selection, 1–86400 second lifetimes and manual route stops. Devices using the same LAN host share pings; separate hosts use explicit JSON export / import.
 
 ## Ready-to-copy posts
 
-- [Steam Discussions](posts/steam-forum.txt): paste the title and body into the DDS2 community discussion editor. Attach the wide cover and recipe/map screenshots if the editor permits attachments.
-- [LinkedIn](posts/linkedin.txt): use the square or wide cover, optionally adding desktop and companion captures as a carousel.
-- [Nexus Mods / Vortex](posts/nexus-description.txt): standalone-utility description, installation and limitations. Upload screenshots to the image gallery and the Windows ZIP as a manual-download file. No Vortex extension or automatic deployment support is claimed.
+- [Steam Discussions](posts/steam-forum.txt): title and body, with map / recipe captures.
+- [LinkedIn](posts/linkedin.txt): short project description and cover or screenshot carousel.
+- [Nexus Mods / Vortex](posts/nexus-description.txt): standalone utility description and manual installation. No Vortex deployment extension is included.
 
-These are drafts for the author to post. No Steam, LinkedIn or Nexus post has been published automatically. Keep the game-only context, read-only save statement, unknown-data limitations, author credit and project download link when reposting. Do not present CartelDesk as an official DDS2 product.
+These drafts are for the author to post. Keep the read-only save statement, unknown-data limitations, credits and download link. Secure peer sessions, application live deltas, full-save transfer UI / recovery and production signing are pending. The private catalog has 131 unique requirements from 190 source points; this does not claim all requirements are complete. Physical-phone and game-session FPS checks are not yet complete.
 
 Author: Gábor Kocsis (acsokis). [GitHub](https://github.com/acsokis) · [Instagram](https://www.instagram.com/gabor_carter/) · [LinkedIn](https://www.linkedin.com/in/gabor-web/).
-
-## Wiki attribution and updates
 
 [Map and reference data from drugdealersim.com](https://drugdealersim.com/)
 
 Map and data from drugdealersim.com
 
-Unofficial companion. Not endorsed by or affiliated with drugdealersim.com, TGS, ByteRunners or Movie Games SA.
-Reference data checked 2026-10-06; visit the live wiki for current data during its ongoing audit. Currency: Bolivars (B).
-
-When sharing a post, keep both the wiki credit/link and the non-affiliation statement. Wiki permission covers its map render and curation, not underlying game IP or contributed guide prose.
-
-Media refreshed: 2026-10-06. All captures show the current application. Covers include the wiki credit directly on the image; keep attribution when publishing.
-
-Current release: v1.0.1. Native screenshots show the upper-right Command Desk companion card, with its selectable IP, URL and clickable QR. The QR popup uses a documented example LAN address, not a working public demonstration endpoint. The Windows package has one top-level CartelDesk.exe and a runtime folder containing its Qt dependencies and backend. The owned server stops when the desktop closes or is terminated.
-
-Official DDS2 icon: sourced from the [game’s Steam community page](https://steamcommunity.com/app/1708850/), used as the Windows application/browser icon and in the QR centre. QR codes use high error correction; both the displayed card and enlarged output are checked by decoding. The artwork belongs to its respective rights holders. Wiki permission covers its map and curation, not game artwork or underlying game IP; no endorsement is implied.
+Unofficial companion. Not endorsed by or affiliated with drugdealersim.com, TGS, ByteRunners or Movie Games SA. The wiki's permission covers its map render and curation, not underlying game IP or contributed guide prose. Currency: Bolivars (B). The wiki is being audited; consult the live site for current figures. Reference re-sync is planned for 2026-10-20. Material will be removed if the wiki requests it.

@@ -1,130 +1,104 @@
 # DDS2 CartelDesk
 
-![DDS2 CartelDesk — Windows desktop and phone companion](media/cover-wide.png)
+![DDS2 CartelDesk — desktop and phone companion](media/cover-wide.png)
 
-**Your local planning desk for Drug Dealer Simulator 2.** Read your save, check ingredients and equipment, organise stock transfers, and keep the same tools beside you on your phone.
+A free, unofficial Windows planning desk for Drug Dealer Simulator 2. Read your campaign, find ingredients and equipment, organise stock and routes, and open the same tools on your phone.
 
-[**Download for Windows x64**](https://github.com/acsokis/DDS2-CartelDesk/releases/latest) · [Screenshots](#screenshots) · [Media & post kit](#media--post-kit) · [Report an issue](https://github.com/acsokis/DDS2-CartelDesk/issues)
+**[Download the latest Windows release](https://github.com/acsokis/DDS2-CartelDesk/releases/latest)** · [Screenshots and posting material](media/README.md)
 
-## Get started
+Only the latest release is public. This repository distributes the application and media; the application's source code remains private.
 
-1. Download **DDS2-CartelDesk-v1.0.1-Windows-x64.zip** from Releases.
-2. Extract the entire ZIP into a writable folder. Keep its runtime, web and licenses folders together. CartelDesk.exe is the only executable in the top-level folder; DLLs and the backend are grouped in runtime/.
-3. Open **CartelDesk.exe**. The native window starts its own local server.
-4. Use **Start / Stop** to control the server. Closing the window stops its server.
+## Start on Windows
 
-Designed for Windows 11 x64. No installation, command window, Node.js, Python or separate Qt installation is required. The application is a separate planning tool; it does not execute game actions.
+1. Extract the complete Windows x64 ZIP into a writable folder.
+2. Start **CartelDesk.exe**. The window manages its own background service with Start and Stop; closing it also stops its service.
+3. Select your DDS2 cartel folder or choose an individual Progress save. The normal location is under LocalAppData/DrugDealerSimulator2/Saved/SaveGames/Cartels.
+4. Keep the companion open while playing, then refresh after the game finishes saving.
 
-The default save folder is:
+The release root contains the launcher, README, configuration and optional network helper. Qt and native libraries stay in **runtime/**; web assets in **web/**; notices and corresponding Qt source archives in **licenses/**. Keep these folders beside the launcher.
 
-`%LOCALAPPDATA%\DrugDealerSimulator2\Saved\SaveGames\Cartels`
+Game saves and sidecar files are read only. There is no automatic campaign import or overwrite.
 
-CartelDesk finds the latest cartel folder. Choose another folder or .save in Settings. Game saves are **read-only**. Plans and preferences are stored separately in config.json and desktop.ini.
+## Desktop and phone
+
+The C17 service parses and plans locally; the C++ desktop uses Qt Quick navigation and Operations views alongside native Widgets. The localhost web UI and portrait companion use the same saved facts.
+
+For a phone, enable private-LAN companion mode, start the service and select the Wi-Fi IPv4 address in Command Desk. Scan its QR code; click it to open a larger, resizable QR window. The phone and PC must be on the same local network. Windows may require the supplied ENABLE_COMPANION_NETWORK.ps1 helper for its private-network firewall rule.
+
+Responsive layouts keep text sharp as windows resize. Motion is optional and the browser's reduced-motion preference is respected. The phone layout is intended for modern portrait displays, including Galaxy S22 Ultra class screens. A physical phone has not yet been verified.
+
+The browser language is the initial web preference and the system language is the desktop default. English, German, Spanish, French, Hungarian, Polish, Ukrainian, Russian, Czech, Serbian and Croatian are available.
 
 ## What you can do
 
-| Feature | Behaviour |
+| Area | Saved facts and controls |
 | --- | --- |
-| Native desktop | Qt 6.12 Widgets window, managed Start / Stop, searchable tables and settings |
-| Recipes | 187 documented recipes with ingredients, saved production equipment and laboratory workstations |
-| Production planning | Reserve customer demand first, allocate stock once, calculate missing materials and share saved storage capacity |
-| Logistics | Saved distributor assignments, transfers, orders and straight-line distance estimates |
-| Game map | Isla Sombra map with discovery-based fog-of-war, known locations and ingredient lookup |
-| Phone companion | Portrait web interface with the same save data, recipes, map and plans |
-| Export | Filtered CSV and all-table CSV ZIP |
-| Languages | English, German, Spanish, French, Hungarian, Polish, Ukrainian, Russian, Czech, Serbian and Croatian |
+| Operations | Loaded campaign, recorded money in Bolivars (B), own stock, missing requirements and transfers |
+| Inventory | Items, substances, equipment, quantities and distinct installed, collection, player, staff and stored contexts |
+| Cartel Network | Saved hideouts, distributor desks, distributors, dealers, workers and assignments; missing or conflicting links stay unresolved |
+| Recipes | Recorded ingredients and quantities, available equipment alternatives and scaled batches; unknown requirements stay unknown |
+| Planner | Acquire, store, produce and transport; recorded prices, quantities, capacities and straight-line distances |
+| Planning lists | Add, edit quantities, remove, filter, save/load/delete named lists and mark favorites |
+| Map | Game map, persistent legend and counts, stock/source search, layers, Locate, optional routes and reference ranges |
+| External pings | Red triangles, sets, batch additions, multi-select deletion, seconds-based expiry and manual route stops |
+| Save Inspector | Technical IDs, complete tables, parser metadata, search, filters and CSV/ZIP exports |
 
-Desktop language follows the system; web language follows the browser. The language menu overrides automatic selection.
+**Owned inventory and Acquisition sources are separate.** Finding no owned ethanol does not end the supplier search. Recipe requirements show known vendors, storage contexts and coordinates independently of your own quantity. Recorded coverage does not promise unreserved stock. Quantities in incompatible units are never summed.
 
-## Phone companion
+The current planning list is separate from saved named lists and production targets. Add a recipe's ingredients and non-alternative tools to the draft, edit amounts or mark them unknown, then save a named list. Choose alternative equipment individually. Reset clears the draft and planner filters while retaining named lists; each production plan can be removed separately.
 
-Enable **phone companion on LAN** in the native window. Connect your phone to the same Wi-Fi as the PC and open the private-IP **/companion** address shown in the window. The desktop web interface is also available at http://127.0.0.1:8765.
+## Actual game exploration
 
-The phone uses the PC's displayed IP address: localhost on the phone refers to the phone itself. Keep the PC application running. The portrait interface targets modern high-resolution phones such as the Galaxy S22 Ultra.
+Terrain fog uses **FOW_Target.exr from the selected cartel folder**. Its HALF RGB channels contain the exploration mask; constant alpha is ignored. The previous circle, bridge and hull estimate has been removed from both desktop and web.
 
-If Windows blocks incoming connections, run the optional **ENABLE_COMPANION_NETWORK.ps1** as administrator. It adds a private-network, local-subnet rule for port 8765. Public Internet clients are rejected; this is a local-network companion.
+If the file is missing, invalid or unsupported, the terrain stays covered and the interface explains why. The **Fog of war** checkbox can show the terrain without writing any game file. Turning it off does not unlock hidden inventory, recipes or unverified locations. An uploaded Progress save has no accompanying mask unless you select its local cartel folder.
 
-## Fog-of-war and data limits
+**Sharing exploration with LAN companions is optional and off by default.** Localhost and desktop can use the host's mask. A LAN client receives no mask while sharing is disabled. Known saved places still have useful markers. Use Reset map filters and layers if a search or an old layer preference hides results.
 
-Fog-of-war is enabled in the native app, desktop web and phone companion. It reveals neighbourhoods around places explicitly discovered or owned in the save. Undiscovered catalogue markers stay hidden, and a nearby known position does not unlock another marker.
+The three adjacent files serve different purposes: CartelDefaults.sav stores cartel configuration and assignments, CartelLocalData.sav stores local hints and favorite settings, and FOW_Target.exr is an image. They are not the LootPoolDatabase DataTable. The [wiki identifies LootPoolDatabase as a game DataTable source](https://drugdealersim.com/wiki/dds2/clothing-apparel); a campaign's dynamic loot state is different from the build's static loot definitions. Missing chances, quantities and prices stay unknown.
 
-The mask uses saved discovery flags and coordinates; it is **not the game's pixel exploration mask**. Unknown coordinates, prices, recipe yields and equipment compatibility remain unknown. Public shop/loot information describes possible locations, not current stock. Transfer lines are straight-line estimates, not verified road routes. Saved demand does not prove an active order.
+## External pings and manual routes
 
-## Companion QR and server lifecycle
+Open **External map pings**, create a set and choose a lifetime from **1 to 86400 seconds**. Add at the visible map centre, double-click to place a ping, or add up to 100 filtered markers at once. Filter by set, select one or multiple pings and remove them. The workspace supports 30 sets and 200 active pings.
 
-Enable companion access and start the service. In the upper-right companion card on the Command Desk tab, choose the local IP address of the adapter shared with your phone, then scan its QR code. Click the QR card to open a larger window and use the size slider; closing it leaves the card in its original place. The chosen address is remembered. The phone and PC must share a private network, and Windows Firewall must allow companion access. QR codes are generated locally, without sending the URL to an external service.
+Browsers and desktop connected to the **same running LAN host** share additions/removals and expiry with a two-second poll. For a separate host, explicitly export/import the ping JSON packet; imported pings retain only their remaining lifetime. Invalid batches are rejected before the workspace changes.
 
-The backend runs in the background while the desktop is open. Stop ends the owned server; closing the desktop also stops it. A parent-process watcher terminates the server if the desktop is forcibly terminated, even during an incomplete network request.
+Recipe and planner pages can show ping stops on their map. These are manual, straight-line routes and external annotations. They do not claim road navigation, owned inventory, available supplier stock or live player positions.
+
+Encrypted peer sessions, a live WebRTC delta stream and full-save transfer are **not yet connected to the released app UI**. Experimental transfer acceptance and recovery remain pending; this release never sends or replaces a campaign file.
 
 ## Screenshots
 
-These are actual application captures using demonstration save data. Local filesystem paths and adapter addresses have been removed from the presentation. The visible map remains behind fog-of-war.
+These are actual desktop, localhost and portrait captures from a demonstration campaign. Paths and adapter details are removed from the presentation.
 
-**Windows desktop**
+![Command Desk and companion QR](media/screenshots/desktop.png)
 
-![Native DDS2 CartelDesk window with Start and Stop](media/screenshots/desktop.png)
+![Native map with game exploration and visible markers](media/screenshots/desktop-map-detail.png)
 
-**Enlarged companion QR**
+![Web map and legend](media/screenshots/web-map.png)
 
-![Companion QR popup with size control and example LAN address](media/screenshots/desktop-qr.png)
+![External ping sets and manual route stops](media/screenshots/web-map-pings.png)
 
-**Recipes and equipment**
+![Planning list and separate acquisition sources](media/screenshots/web-planner-list.png)
 
-![Recipe ingredients, production equipment and planning controls](media/screenshots/web-recipes.png)
+<img src="media/screenshots/companion-map.png" width="280" alt="Portrait map with game exploration and legend"> <img src="media/screenshots/companion-planner-sources.png" width="280" alt="Portrait ingredient sourcing">
 
-**Discovery-based map**
+## Data, credits and limitations
 
-![Native map showing only saved known places](media/screenshots/desktop-map.png)
+**Map and reference data from drugdealersim.com** — [live wiki](https://drugdealersim.com/).
 
-**About and wiki credits**
+About and posting credit: **Map and data from drugdealersim.com**. Branding credit: **Sourced from drugdealersim.com**.
 
-![About view with wiki attribution and non-affiliation notice](media/screenshots/desktop-about.png)
+CartelDesk is not endorsed by or affiliated with drugdealersim.com, TGS, ByteRunners or Movie Games SA. Underlying game data belongs to the game's developers. Wiki permission covers its map render and curation; contributed guide prose is not bundled. References are an offline snapshot under review: use the live wiki for current values. Currency is Bolivars (B).
 
-**Phone companion**
+The icon is an original CartelDesk mark. Third-party and Qt notices, dynamic-linking information and corresponding source archives accompany the package. The application's own source is private.
 
-<p>
-<img src="media/screenshots/companion-overview.png" width="280" alt="Phone companion overview">
-<img src="media/screenshots/companion-recipes.png" width="280" alt="Phone recipe ingredients and equipment">
-<img src="media/screenshots/companion-map.png" width="280" alt="Phone map with fog-of-war">
-</p>
+By **Gábor Kocsis (acsokis)**: [GitHub](https://github.com/acsokis) · [Instagram](https://www.instagram.com/gabor_carter/) · [LinkedIn](https://www.linkedin.com/in/gabor-web/).
 
-## Media & post kit
+Development uses C17/C++17, an existing save parser, a bounded EXR decoder, responsive web views and local Windows/browser verification. AI-assisted implementation and review are described in About. Unknown game facts are never filled with guessed values.
 
-[Open the media kit](media/README.md) or download **DDS2-CartelDesk-v1.0.1-Media.zip** from [Releases](https://github.com/acsokis/DDS2-CartelDesk/releases/latest).
-
-It contains original screenshots, a 1200 × 675 wide cover, a 1080 × 1080 square cover, and ready-to-copy English posts for **Steam Discussions**, **LinkedIn**, and **Nexus Mods / Vortex**. These are posting drafts; they have not been posted to those platforms.
-
-For Nexus Mods, describe CartelDesk as a standalone utility and use manual download/extraction. The package is not a Vortex game extension or an automatic game-folder deployment mod.
-
-## Credits and source
-
-Created by **Gábor Kocsis (acsokis)** — [GitHub](https://github.com/acsokis) · [Instagram](https://www.instagram.com/gabor_carter/) · [LinkedIn](https://www.linkedin.com/in/gabor-web/).
-
-Built with a **C17 save parser**, **C++17 / Qt 6.12 Widgets**, and local **HTML/CSS/JavaScript** interfaces. AI coding assistance, Windows builds and regression checks supported development. Unofficial DDS2 companion; not affiliated with the game's creators.
-
-This repository publishes release information and media. **The application's C/C++ source and development files are not published.** The download includes the browser runtime assets needed by its web interfaces. GitHub's automatic “Source code” archives contain this public documentation repository, not the native application source.
-
-Qt is dynamically linked. The licenses folder includes its original license texts, SBOM and the corresponding unmodified Qt 6.12.0 source archive. That archive contains third-party Qt source, not CartelDesk's private source. Keep it and THIRD_PARTY_NOTICES.txt with the distribution.
-
-Game reference data: [Isla Sombra map](https://drugdealersim.com/map), [recipes](https://drugdealersim.com/wiki/dds2/crafting-recipes), [items](https://drugdealersim.com/wiki/dds2/all-items-catalog), [equipment](https://drugdealersim.com/wiki/dds2/hideout-equipment).
-
-## Validation
-
-37 automated Windows checks passed on Windows x64, including parser compatibility, stock allocation, capacity, read-only saves, Unicode, private-LAN access, 11 languages, recipe planning, fog-of-war markers, CSV ZIP integrity, and the real Qt Start / Stop lifecycle, normal/forced desktop closure during a partial HTTP request, and QR decoding from the actual card and enlarged images. Desktop web and portrait companion screenshots were also checked for JavaScript errors and horizontal overflow. Physical-phone touch testing has not been performed.
+The maintained design catalog contains **131 unique active acceptance points** plus shared constraints, after deduplicating historical requests. That count is a scope catalog, not a claim that every experimental multiplayer or recovery requirement is complete. Hardware-specific FPS, physical-phone, assistive-technology and full progression coverage remain pending.
 
 ## Magyar gyorsindítás
 
-Töltsd le a Windows ZIP-et, csomagold ki teljesen, és indítsd a **CartelDesk.exe** fájlt. A Start / Stop gomb vezérli a háttérszervert; az ablak bezárása leállítja. A program a valódi DDS2 mentési mappát keresi, és a játékmentést kizárólag olvassa. Telefonon ugyanazon a Wi-Fi-n az ablakban megjelenő /companion címet nyisd meg. A felületen magyar nyelv is választható.
-
-## Wiki attribution and updates
-
-[Map and reference data from drugdealersim.com](https://drugdealersim.com/)
-
-Map and data from drugdealersim.com
-
-Unofficial companion. Not endorsed by or affiliated with drugdealersim.com, TGS, ByteRunners or Movie Games SA.
-Reference data checked 2026-10-06; visit the live wiki for current data during its ongoing audit. Currency: Bolivars (B).
-
-The wiki operator permits bundling and screenshots of its map render and curation with attribution. This permission does not license the underlying game developer rights or contributed guide prose. No Steam-imported guide text is bundled. The reference snapshot is due for review on 2026-10-20; this is a planned maintenance date, not an automatic synchronization. If the wiki operator requests removal of its materials, those materials will be removed from the distribution.
-
-Official DDS2 icon: sourced from the [game’s Steam community page](https://steamcommunity.com/app/1708850/), used as the Windows application/browser icon and in the QR centre. QR codes use high error correction; both the displayed card and enlarged output are checked by decoding. The artwork belongs to its respective rights holders. Wiki permission covers its map and curation, not game artwork or underlying game IP; no endorsement is implied.
+Csomagold ki a teljes ZIP-et, és indítsd a **CartelDesk.exe** fájlt. A Start/Stop és az ablak bezárása kezeli a saját háttérszervert. Válaszd ki a kartell mappáját: a térképköd a **FOW_Target.exr** fájlból jön, kikapcsolható, LAN-megosztása külön opcionális. Telefonhoz engedélyezd a companion módot, válaszd a Wi-Fi IP-címet, és olvasd be a QR-kódot. A piros pingek azonos LAN-host alatt közösek; másik hosthoz JSON export/import van. A játékmentést a program kizárólag olvassa.

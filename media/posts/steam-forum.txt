@@ -1,34 +1,25 @@
-TITLE: DDS2 CartelDesk — local save planner, recipes, fog-of-war map and phone companion
+Title: DDS2 CartelDesk — free Windows planner with a phone companion
 
-I've made DDS2 CartelDesk, an unofficial Windows companion for Drug Dealer Simulator 2.
+I've made DDS2 CartelDesk, a free local companion for Drug Dealer Simulator 2. It reads your saved campaign and helps you find your inventory, plan recipe supplies, production equipment and transfers, and open known locations on the map.
 
-It reads your save without changing it and brings your inventory, ingredients, equipment and logistics into one local planning desk. There is a native desktop window with Start / Stop, a desktop web interface and a portrait phone companion for the same Wi-Fi network.
+The Windows app has Start / Stop controls and a local QR code for its portrait phone interface. Both use the game's FOW_Target.exr exploration mask, with a fog toggle and optional exploration sharing. Map markers, legend and empty-search results are visible. Filters and map movement have been optimized.
 
-Features:
-- 187 documented in-game recipes, ingredients and saved production equipment.
-- Stock-transfer and production planning that reserves customer demand first.
-- Isla Sombra map with discovery-based fog-of-war in every interface.
-- Saved distributor assignments, orders, stock and storage capacity.
-- CSV and ZIP export, plus 11 languages selected from your system or browser.
+Planner lists support add, delete, quantities, save, favorites and reset. Owned inventory and acquisition sources are separate: a missing ingredient still shows its known purchase location. Unknown prices, stock and compatibility remain unknown. Red triangle pings support sets, multiple selection, timed expiry and manual route stops.
+
+Extract the Windows ZIP and run CartelDesk.exe; keep runtime, web and licenses together. It reads game saves and does not automate gameplay. 11 interface languages are included. Route lines are straight-line planning aids.
+
+Suggested images: cover-wide.png, desktop-map-detail.png, web-planner-sources.png, companion-recipes.png.
 
 Download: https://github.com/acsokis/DDS2-CartelDesk/releases/latest
-Screenshots and details: https://github.com/acsokis/DDS2-CartelDesk
+Project: https://github.com/acsokis/DDS2-CartelDesk
 
-Extract the whole Windows ZIP and run CartelDesk.exe. For a phone, enable LAN companion and open the PC address shown in the app.
-
-This is a planning tool: it does not perform game actions. Unknown yields, prices or equipment compatibility stay unknown. The map uses saved known places rather than the game's pixel exploration mask, and transfer distances are straight-line estimates.
-
-Feedback and reproducible bug reports are welcome through GitHub Issues. Please do not attach personal save files publicly; include the app version and error message first.
+Map and reference data from drugdealersim.com — https://drugdealersim.com/
+Map and data from drugdealersim.com
+Unofficial companion. Not endorsed by or affiliated with drugdealersim.com, TGS, ByteRunners or Movie Games SA. Game data belongs to the game's developers. The wiki is mid-audit; visit the live site for current figures. Currency is Bolivars (B).
 
 Gábor Kocsis (acsokis)
+GitHub: https://github.com/acsokis
+Instagram: https://www.instagram.com/gabor_carter/
+LinkedIn: https://www.linkedin.com/in/gabor-web/
 
-Map and data from drugdealersim.com — https://drugdealersim.com/
-
-Unofficial companion. Not endorsed by or affiliated with drugdealersim.com, TGS, ByteRunners or Movie Games SA.
-Reference data checked 2026-10-06; visit the live wiki for current data during its ongoing audit. Currency: Bolivars (B).
-
-New in v1.0.1: choose the companion IP address and scan a locally generated QR code. Click it for a larger view with a size slider. One top-level CartelDesk.exe; Qt dependencies and backend are grouped in runtime/. The desktop stops its owned server on exit, including forced termination. Keep the runtime, web and licenses folders together after extracting.
-
-Companion QR includes the official DDS2 icon from https://steamcommunity.com/app/1708850/. The game artwork belongs to its respective rights holders; this remains an unofficial companion, with no endorsement implied.
-
-The companion QR, IP selector and URL are grouped in a dedicated card at the upper-right of Command Desk. Click the QR for the enlarged view.
+Development scope: 131 unique acceptance requirements consolidated from 190 historical source points. Secure peer sessions, live delta integration and full-save transfer UI / recovery are still pending. This release shares pings on the same LAN host and supports explicit ping JSON exchange between separate hosts.
