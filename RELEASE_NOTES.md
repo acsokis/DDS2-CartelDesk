@@ -8,4 +8,4 @@
 - C17/C++17 retained with Qt 6.12 navigation and Operations views, native controls, Start/Stop, owned-process cleanup and companion QR/IP selector. One root launcher; libraries in runtime/.
 - Updated 11-language labels, README, actual screenshots and Steam/LinkedIn/Nexus media. Map and reference data from drugdealersim.com. No affiliation or endorsement.
 
-The 131 unique acceptance points are the current scope catalog. WebRTC peer-session UI/wire integration, full-save transfer acceptance/recovery, physical-phone and hardware-specific FPS verification remain pending. The released UI does not transfer or replace a campaign. Source code remains private; only the latest release is public.
+The 131 unique acceptance points are the current scope catalog. The standalone Windows chunked-save transaction passes parser, verification, backup and atomic-replace tests; its network send/receive UI and crash recovery remain pending. WebRTC peer-session UI/wire integration, physical-phone testing and hardware-specific FPS verification also remain pending. The released UI does not transfer or replace a campaign. Source code remains private; only the latest release is public.

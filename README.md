@@ -65,7 +65,7 @@ Browsers and desktop connected to the **same running LAN host** share additions/
 
 Recipe and planner pages can show ping stops on their map. These are manual, straight-line routes and external annotations. They do not claim road navigation, owned inventory, available supplier stock or live player positions.
 
-Encrypted peer sessions, a live WebRTC delta stream and full-save transfer are **not yet connected to the released app UI**. Experimental transfer acceptance and recovery remain pending; this release never sends or replaces a campaign file.
+Encrypted peer sessions, a live WebRTC delta stream and full-save transfer are **not yet connected to the released app UI**. The standalone Windows transfer transaction passes parser, verification, backup and atomic-replace tests; network send/receive UI and crash recovery remain pending. This release never sends or replaces a campaign file.
 
 ## Screenshots
 
