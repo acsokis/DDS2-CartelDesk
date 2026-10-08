@@ -99,13 +99,13 @@ Development uses C17/C++17, an existing save parser, a bounded EXR decoder, resp
 
 The maintained design catalog contains **131 unique active acceptance points** plus shared constraints, after deduplicating historical requests. That count is a scope catalog, not a claim that every experimental multiplayer or recovery requirement is complete. Hardware-specific FPS, physical-phone, assistive-technology and full progression coverage remain pending.
 
-## Magyar gyorsindítás
+## Quick start summary
 
-Csomagold ki a teljes ZIP-et, és indítsd a **CartelDesk.exe** fájlt. A Start/Stop és az ablak bezárása kezeli a saját háttérszervert. Válaszd ki a kartell mappáját: a térképköd a **FOW_Target.exr** fájlból jön, kikapcsolható, LAN-megosztása külön opcionális. Telefonhoz engedélyezd a companion módot, válaszd a Wi-Fi IP-címet, és olvasd be a QR-kódot. A piros pingek azonos LAN-host alatt közösek; másik hosthoz JSON export/import van. A játékmentést a program kizárólag olvassa.
+Extract the entire ZIP and launch **CartelDesk.exe**. Start, Stop and closing the window manage its owned background server. Select your cartel folder. Map exploration comes from **FOW_Target.exr**; fog has a view toggle and optional LAN sharing. For your phone, enable companion mode, select the Wi-Fi IP address and scan the QR code. Red pings are shared by clients on the same LAN host; independent hosts use JSON export/import. Game saves are read only.
 
 ## Procurement and courier planning preview — 2026-10-08
 
-Planner and recipe requirements now include map reference acquisition sources, with general same-name item variant matching. Reference stock and prices remain unknown; owned quantities retain exact IDs and units. Saved player positions support selectable couriers and multiple owned hideout endpoints. The map displays pickup/delivery legs. This is a greedy straight-line planning estimate requiring stock verification, not road pathfinding or confirmed availability. Details: [supply planning](docs/SUPPLY_CHAIN_HU.md). Included in v1.1.1.
+Planner and recipe requirements now include map reference acquisition sources, with general same-name item variant matching. Reference stock and prices remain unknown; owned quantities retain exact IDs and units. Saved player positions support selectable couriers and multiple owned hideout endpoints. The map displays pickup/delivery legs. This is a greedy straight-line planning estimate requiring stock verification, not road pathfinding or confirmed availability. Details: [supply planning](docs/SUPPLY_CHAIN.md). Included in v1.1.1.
 
 
 Latest update (v1.1.1): independent viewport scrolling in desktop navigation and content; readable recipe rows and wrapping action controls; visible source-to-target network arrows outside the fog mask; acquisition references matched across same-name item variants; saved courier positions and selectable hideout destinations for pickup/delivery planning. Quantities and prices absent from the reference remain unknown. Courier routes are greedy straight-line estimates, not road navigation or confirmed live player positions. Map and reference data from drugdealersim.com (https://drugdealersim.com). No endorsement or affiliation with TGS, ByteRunners or Movie Games SA.
