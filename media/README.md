@@ -1,4 +1,4 @@
-# DDS2 CartelDesk media kit — v1.1.0
+# DDS2 CartelDesk media kit — v1.1.1
 
 [Download the latest Windows release](https://github.com/acsokis/DDS2-CartelDesk/releases/latest) · [Project](https://github.com/acsokis/DDS2-CartelDesk)
 
@@ -38,3 +38,6 @@ Author: Gábor Kocsis (acsokis). [GitHub](https://github.com/acsokis) · [Instag
 Map and data from drugdealersim.com
 
 Unofficial companion. Not endorsed by or affiliated with drugdealersim.com, TGS, ByteRunners or Movie Games SA. The wiki's permission covers its map render and curation, not underlying game IP or contributed guide prose. Currency: Bolivars (B). The wiki is being audited; consult the live site for current figures. Reference re-sync is planned for 2026-10-20. Material will be removed if the wiki requests it.
+
+
+Latest update (v1.1.1): independent viewport scrolling in desktop navigation and content; readable recipe rows and wrapping action controls; visible source-to-target network arrows outside the fog mask; acquisition references matched across same-name item variants; saved courier positions and selectable hideout destinations for pickup/delivery planning. Quantities and prices absent from the reference remain unknown. Courier routes are greedy straight-line estimates, not road navigation or confirmed live player positions. Map and reference data from drugdealersim.com (https://drugdealersim.com). No endorsement or affiliation with TGS, ByteRunners or Movie Games SA.

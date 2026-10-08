@@ -1,4 +1,4 @@
-DDS2 CartelDesk v1.1.0 — a local desktop and phone planning companion for Drug Dealer Simulator 2.
+DDS2 CartelDesk v1.1.1 — a local desktop and phone planning companion for Drug Dealer Simulator 2.
 
 I built a C17 backend and C++17 Qt desktop app with a responsive browser companion. The workflow combines read-only campaign data, 187 recipe references, production equipment, owned stock and independent acquisition sources.
 
@@ -26,3 +26,6 @@ Development scope: 131 unique acceptance requirements consolidated from 190 hist
 
 
 #GameDevelopment #Cpp #Qt #DesktopApps #UXDesign #DrugDealerSimulator2
+
+
+Latest update (v1.1.1): independent viewport scrolling in desktop navigation and content; readable recipe rows and wrapping action controls; visible source-to-target network arrows outside the fog mask; acquisition references matched across same-name item variants; saved courier positions and selectable hideout destinations for pickup/delivery planning. Quantities and prices absent from the reference remain unknown. Courier routes are greedy straight-line estimates, not road navigation or confirmed live player positions. Map and reference data from drugdealersim.com (https://drugdealersim.com). No endorsement or affiliation with TGS, ByteRunners or Movie Games SA.

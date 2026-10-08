@@ -37,3 +37,6 @@ Instagram: https://www.instagram.com/gabor_carter/
 LinkedIn: https://www.linkedin.com/in/gabor-web/
 
 Development scope: 131 unique acceptance requirements consolidated from 190 historical source points. Secure peer sessions, live delta integration and full-save transfer UI / recovery are still pending. This release shares pings on the same LAN host and supports explicit ping JSON exchange between separate hosts.
+
+
+Latest update (v1.1.1): independent viewport scrolling in desktop navigation and content; readable recipe rows and wrapping action controls; visible source-to-target network arrows outside the fog mask; acquisition references matched across same-name item variants; saved courier positions and selectable hideout destinations for pickup/delivery planning. Quantities and prices absent from the reference remain unknown. Courier routes are greedy straight-line estimates, not road navigation or confirmed live player positions. Map and reference data from drugdealersim.com (https://drugdealersim.com). No endorsement or affiliation with TGS, ByteRunners or Movie Games SA.

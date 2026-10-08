@@ -102,3 +102,10 @@ The maintained design catalog contains **131 unique active acceptance points** p
 ## Magyar gyorsindítás
 
 Csomagold ki a teljes ZIP-et, és indítsd a **CartelDesk.exe** fájlt. A Start/Stop és az ablak bezárása kezeli a saját háttérszervert. Válaszd ki a kartell mappáját: a térképköd a **FOW_Target.exr** fájlból jön, kikapcsolható, LAN-megosztása külön opcionális. Telefonhoz engedélyezd a companion módot, válaszd a Wi-Fi IP-címet, és olvasd be a QR-kódot. A piros pingek azonos LAN-host alatt közösek; másik hosthoz JSON export/import van. A játékmentést a program kizárólag olvassa.
+
+## Procurement and courier planning preview — 2026-10-08
+
+Planner and recipe requirements now include map reference acquisition sources, with general same-name item variant matching. Reference stock and prices remain unknown; owned quantities retain exact IDs and units. Saved player positions support selectable couriers and multiple owned hideout endpoints. The map displays pickup/delivery legs. This is a greedy straight-line planning estimate requiring stock verification, not road pathfinding or confirmed availability. Details: [supply planning](docs/SUPPLY_CHAIN_HU.md). Included in v1.1.1.
+
+
+Latest update (v1.1.1): independent viewport scrolling in desktop navigation and content; readable recipe rows and wrapping action controls; visible source-to-target network arrows outside the fog mask; acquisition references matched across same-name item variants; saved courier positions and selectable hideout destinations for pickup/delivery planning. Quantities and prices absent from the reference remain unknown. Courier routes are greedy straight-line estimates, not road navigation or confirmed live player positions. Map and reference data from drugdealersim.com (https://drugdealersim.com). No endorsement or affiliation with TGS, ByteRunners or Movie Games SA.
