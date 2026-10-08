@@ -71,7 +71,9 @@ Encrypted peer sessions, a live WebRTC delta stream and full-save transfer are *
 
 These are actual desktop, localhost and portrait captures from a demonstration campaign. Paths and adapter details are removed from the presentation.
 
-![Command Desk and companion QR](media/screenshots/desktop.png)
+![Operations and connection controls](media/operations-telemetry.png)
+
+![Responsive report columns](media/operations-report.png)
 
 ![Native map with game exploration and visible markers](media/screenshots/desktop-map-detail.png)
 
@@ -108,4 +110,40 @@ Extract the entire ZIP and launch **CartelDesk.exe**. Start, Stop and closing th
 Planner and recipe requirements now include map reference acquisition sources, with general same-name item variant matching. Reference stock and prices remain unknown; owned quantities retain exact IDs and units. Saved player positions support selectable couriers and multiple owned hideout endpoints. The map displays pickup/delivery legs. This is a greedy straight-line planning estimate requiring stock verification, not road pathfinding or confirmed availability. Details: [supply planning](docs/SUPPLY_CHAIN.md). Included in v1.1.1.
 
 
-Latest update (v1.1.1): independent viewport scrolling in desktop navigation and content; readable recipe rows and wrapping action controls; visible source-to-target network arrows outside the fog mask; acquisition references matched across same-name item variants; saved courier positions and selectable hideout destinations for pickup/delivery planning. Quantities and prices absent from the reference remain unknown. Courier routes are greedy straight-line estimates, not road navigation or confirmed live player positions. Map and reference data from drugdealersim.com (https://drugdealersim.com). No endorsement or affiliation with TGS, ByteRunners or Movie Games SA.
+Previous layout update (v1.1.1): independent viewport scrolling in desktop navigation and content; readable recipe rows and wrapping action controls; visible source-to-target network arrows outside the fog mask; acquisition references matched across same-name item variants; saved courier positions and selectable hideout destinations for pickup/delivery planning. Quantities and prices absent from the reference remain unknown. Courier routes are greedy straight-line estimates, not road navigation or confirmed live player positions. Map and reference data from drugdealersim.com (https://drugdealersim.com). No endorsement or affiliation with TGS, ByteRunners or Movie Games SA.
+
+## Buyer evidence update ? 2026-10-08
+
+Vendor sells/buys labels use the vendor viewpoint. A searchable buyer catalogue includes Tom the Tech?s twelve screenshot-confirmed tool quotations and Alejandro Flores?s user-reported empty bottle acceptance with unknown prices. Owned inventory is independent of acceptance. Unverified catalogue quotations stay marked unverified; unknown buyer locations do not create map pins. See [buyer evidence and limitations](docs/BUYER_EVIDENCE.md).
+
+## Desktop production telemetry
+
+Operations now uses a compact production instrument above full-width corporate KPI grids. It measures tracked queue reductions/increases and raw timer movement per game minute across comparable saves. The first sample stays unresolved; disappearing jobs do not become confirmed output. Compact phone pairing is available through Phone QR. Scanner motion follows the Animations preference. [Data interpretation and limits](docs/PRODUCTION_TELEMETRY.md).
+
+The desktop, web and phone wordmarks now carry a soft skull-orange outline that flows in both directions. Animation can be disabled. [Brand motion](docs/BRAND_MOTION.md).
+
+## Golden-ratio responsive sizing
+
+Desktop, web and phone layouts use a shared golden-ratio spacing and modular type hierarchy, with bounded scaling and readable minimum sizes. Existing animations and colors remain. [Sizing rules and practical limits](docs/GOLDEN_LAYOUT.md).
+
+Operations detail panels use three equal columns for owned inventory, saved locations and data warnings, each with an independent bounded scroll area. Very narrow content below 600 pixels stacks the panels. Unchanged production samples show explicit states (no queue reduction, no new work, or timers changing) instead of a misleading zero-per-minute readout. Numeric zero remains available to the measurement logic; positive observed rates retain their game-minute units. A green reduction curve appears only after a positive reduction is recorded.
+
+## Cartoon game clock
+
+The desktop production instrument includes a scalable circular sun/moon character. Daytime is 06:00?18:00. A daily sun break starts at 16:20 and a moon break at 04:20, lasting 20 saved game minutes: two minutes of comic ignition, sixteen of smoking with drifting embers, and two of stubbing out. These are decorative scenes; their stage follows saved game time without inventing live clock progress. Animation preferences disable movement, leaving a static time-appropriate illustration. Missing game time shows an unresolved clock. Drawing uses a small vector canvas with a 15 FPS timer active only on the visible Operations page.
+
+The cartoon clock adds elastic squash/stretch, blinking and expressive eyebrows, exaggerated puffed cheeks, drifting smoke rings, ignition sparks and a comic stub-out impact. Its original sun/moon characters retain the existing colour palette, saved-time schedule and animation-off behaviour.
+
+The sun uses a gold dial and the moon a silver dial, each with a light-to-dark metallic gradient, hour ticks and slowly rotating radial decoration. Rotation follows the animation preference.
+
+The animated dial sits directly beside the saved day/time label in the production header, with the timer observation status on a separate line. The sun and moon switch with saved daytime/nighttime.
+
+When saved game time is unavailable, a decorative sun/moon coin-spin and trick handoff runs after a random 7?13 minutes spent on the visible Operations page with animations enabled. Each eight-second scene alternates the recipient: sun to moon, then moon to sun. Disabling animation or leaving the page cancels an active scene and pauses its waiting countdown. The clock label stays unavailable; this does not invent game time.
+
+## v1.1.2 ? Operations layout and connection drawers
+
+Operations panels grow with the window height. The production queue has taller rows and a larger scroll area. Six executive metrics use two columns and three rows beside three independently scrollable detail panels on wide windows, with stacked groups on narrower windows. Damascus scrollbars have wider handles. Web, Phone and Steam QR buttons open a motion-aware unfurling connection drawer; links retain the chosen LAN IP, while Steam uses loopback with an optional global web-content opacity control. The selected map location is raised above co-located NPC markers.
+
+The existing saved-time sun/moon scenes and unavailable-clock trick handoffs remain included. Shared inventory transfers and a dedicated Mission view are not implemented in this version. The app remains a read-only game-save companion; planning does not move in-game items.
+
+An observed advancing saved-time day/night change triggers a 32-second decorative coin-spin and trick handoff (moon to sun at dawn, sun to moon at dusk). Daytime boundaries remain 06:00 and 18:00; the 04:20/16:20 scenes remain unchanged. Missing clocks, repeated saves and time rollback do not trigger this transition. The game-time label is not extrapolated; only the decorative scene uses a 30 FPS presentation timer on the visible Operations page. Unknown-clock fallback remains separately scheduled.

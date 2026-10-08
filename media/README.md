@@ -41,3 +41,9 @@ Unofficial companion. Not endorsed by or affiliated with drugdealersim.com, TGS,
 
 
 Latest update (v1.1.1): independent viewport scrolling in desktop navigation and content; readable recipe rows and wrapping action controls; visible source-to-target network arrows outside the fog mask; acquisition references matched across same-name item variants; saved courier positions and selectable hideout destinations for pickup/delivery planning. Quantities and prices absent from the reference remain unknown. Courier routes are greedy straight-line estimates, not road navigation or confirmed live player positions. Map and reference data from drugdealersim.com (https://drugdealersim.com). No endorsement or affiliation with TGS, ByteRunners or Movie Games SA.
+
+## v1.1.2 Operations update
+
+[Operations](operations-telemetry.png) ? [Report columns](operations-report.png) ? [Sun](game-clock-sun.png) ? [Moon](game-clock-moon.png) ? [Trick handoff](game-clock-handoff.png). Clock scene samples may use a forced decorative phase for illustration.
+
+[Saved-time dawn handoff](game-clock-dawn.png), rendered by Qt from an observed 05:59 to 06:00 transition.
