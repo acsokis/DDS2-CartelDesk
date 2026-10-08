@@ -1,3 +1,13 @@
+# v1.1.3 - Item trade lookup correction
+
+- Verified seller catalogues remain searchable before discovering a store; unexplored coordinates stay protected.
+- Price-only resale quotes no longer assert vendor buyback.
+- Unplaced sellers and buyers have text results, region information and matching direction filters. Same-name item-ID variants are searchable.
+- Indexed native lookup and bounded broad-result lists reduce filter work.
+- New sortable item trade CSV and English lookup guide.
+
+Validated on Windows: buyer/catalogue and shared supply model checks, desktop/portrait vendor/filter workflows and 33 native page/viewport renders. Four native map filters: 593 ms total; maximum page paint: 182 ms on the tested machine. Direct installed IoStore DataTable extraction and exhaustive buyer coverage remain incomplete.
+
 # DDS2 CartelDesk v1.1.2
 
 - Actual FOW_Target.exr RGB exploration in native desktop, localhost and optional LAN companion sharing. Circle/hull discovery estimates removed; invalid or missing masks fail closed. Fog has its own view toggle.

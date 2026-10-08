@@ -47,3 +47,10 @@ Latest update (v1.1.1): independent viewport scrolling in desktop navigation and
 [Operations](operations-telemetry.png) ? [Report columns](operations-report.png) ? [Sun](game-clock-sun.png) ? [Moon](game-clock-moon.png) ? [Trick handoff](game-clock-handoff.png). Clock scene samples may use a forced decorative phase for illustration.
 
 [Saved-time dawn handoff](game-clock-dawn.png), rendered by Qt from an observed 05:59 to 06:00 transition.
+
+## Item lookup correction (v1.1.3)
+
+- [Desktop vendor seller lookup](screenshots/web-vendor-sellers.png)
+- [Phone vendor seller lookup](screenshots/companion-vendor-sellers.png)
+
+Verified seller catalogues are searchable without requiring a discovered map position. Buyer coverage remains partial; price-only quotations do not prove acceptance. Map and reference data from [drugdealersim.com](https://drugdealersim.com). No endorsement or affiliation is implied.

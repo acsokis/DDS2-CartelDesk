@@ -147,3 +147,13 @@ Operations panels grow with the window height. The production queue has taller r
 The existing saved-time sun/moon scenes and unavailable-clock trick handoffs remain included. Shared inventory transfers and a dedicated Mission view are not implemented in this version. The app remains a read-only game-save companion; planning does not move in-game items.
 
 An observed advancing saved-time day/night change triggers a 32-second decorative coin-spin and trick handoff (moon to sun at dawn, sun to moon at dusk). Daytime boundaries remain 06:00 and 18:00; the 04:20/16:20 scenes remain unchanged. Missing clocks, repeated saves and time rollback do not trigger this transition. The game-time label is not extrapolated; only the decorative scene uses a 30 FPS presentation timer on the visible Operations page. Unknown-clock fallback remains separately scheduled.
+
+## Item lookup correction (local verification)
+
+Vendor catalogue search no longer depends on discovering a map position. All verified seller entries remain available to item acquisition and recipe planners; unexplored coordinates remain withheld. Matching unplaced sellers appear as text in desktop and web map views. Explicitly hidden stores remain excluded. Vendor acceptance is no longer inferred from a resale quote. See [item trade lookup](docs/ITEM_TRADE_LOOKUP.md) and the sortable [catalogue](docs/ITEM_TRADE_CATALOGUE.csv). Buyer coverage and direct installed IoStore extraction are incomplete.
+
+### Vendor lookup screenshots
+
+![Desktop vendor seller lookup](media/screenshots/web-vendor-sellers.png)
+
+![Phone vendor seller lookup](media/screenshots/companion-vendor-sellers.png)
