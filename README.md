@@ -15,7 +15,7 @@ Only the latest release is public. This repository distributes the application a
 3. Select your DDS2 cartel folder or choose an individual Progress save. The normal location is under LocalAppData/DrugDealerSimulator2/Saved/SaveGames/Cartels.
 4. Keep the companion open while playing, then refresh after the game finishes saving.
 
-The release root contains the launcher, README, configuration and optional network helper. Qt and native libraries stay in **runtime/**; web assets in **web/**; notices and corresponding Qt source archives in **licenses/**. Keep these folders beside the launcher.
+The release root contains the launcher, README, configuration and optional network helper. Qt/native libraries and the read-only `CartelDesk.assets` container stay in **runtime/**; guides and third-party notices stay in **docs/** and **licenses/**. Browser assets and the SQLite reference database are packed into the container. Keep these folders beside the launcher. There is no extra SQLite DLL or database service.
 
 Game saves and sidecar files are read only. There is no automatic campaign import or overwrite.
 
@@ -28,6 +28,14 @@ For a phone, enable private-LAN companion mode, start the service and select the
 Responsive layouts keep text sharp as windows resize. Motion is optional and the browser's reduced-motion preference is respected. The phone layout is intended for modern portrait displays, including Galaxy S22 Ultra class screens. A physical phone has not yet been verified.
 
 The browser language is the initial web preference and the system language is the desktop default. English, German, Spanish, French, Hungarian, Polish, Ukrainian, Russian, Czech, Serbian and Croatian are available.
+
+## Shared data and optional player tracking
+
+A validated SQLite catalogue supplies item aliases, recipe relationships, locations and separately evidenced vendor buys/sells. Owned inventory remains separate from possible acquisition sources. Missing values stay unknown. See the [database and tracking guide](docs/REFERENCE_DATABASE.md).
+
+Toggle **Saved player tracking** in the map on desktop, phone or Steam overlay. Positions update from game saves every 15 seconds; online presence remains unknown. Disabling it removes player/carried-storage positions from companion maps and sync snapshots while retaining inventory. Multi-courier shopping plans use known saved origins and selected destination hideouts; route distances are straight-line estimates.
+
+Installed IoStore indexes have confirmed the game database asset names. Direct DataTable row extraction and automatic ingestion remain incomplete; this release does not claim every installed price, stock value or loot chance is verified.
 
 ## What you can do
 
@@ -157,3 +165,13 @@ Vendor catalogue search no longer depends on discovering a map position. All ver
 ![Desktop vendor seller lookup](media/screenshots/web-vendor-sellers.png)
 
 ![Phone vendor seller lookup](media/screenshots/companion-vendor-sellers.png)
+
+### Local production effects preview
+
+Smooth graph motion, a bounded liquid border, warning/flush/VU sequence, and a clock-menu or Ctrl+Shift+Alt-click sun/moon round trip are included in the current local build. All motion follows the Animations preference. [Controls and validation](docs/PRODUCTION_TELEMETRY.md). These additions are not part of the published v1.1.3 package yet.
+
+Current preview includes selectable SDR and native FP16 scRGB HDR for Qt Quick panels, with automatic display detection, bounded vivid highlights and SDR fallback. Native map/Windows controls and web surfaces remain SDR. Physical 240 Hz operation and HDR monitor calibration remain unverified.
+
+[SDR/HDR modes and current validation](docs/HDR_OUTPUT.md).
+
+The portable EXE embeds its DLLs and runtime. First launch verifies and extracts `runtime/` in the application folder; later launches reuse it. See [portable packaging](docs/LOCAL_RELEASE.md). Native source remains private; this container is not DRM.

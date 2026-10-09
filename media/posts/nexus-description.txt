@@ -40,3 +40,5 @@ Development scope: 131 unique acceptance requirements consolidated from 190 hist
 
 
 Latest update (v1.1.1): independent viewport scrolling in desktop navigation and content; readable recipe rows and wrapping action controls; visible source-to-target network arrows outside the fog mask; acquisition references matched across same-name item variants; saved courier positions and selectable hideout destinations for pickup/delivery planning. Quantities and prices absent from the reference remain unknown. Courier routes are greedy straight-line estimates, not road navigation or confirmed live player positions. Map and reference data from drugdealersim.com (https://drugdealersim.com). No endorsement or affiliation with TGS, ByteRunners or Movie Games SA.
+
+Portable Windows EXE with embedded runtime, verified first-launch extraction, shared SQLite reference catalogue and optional save-based player tracking. Source code remains private.

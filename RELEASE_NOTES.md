@@ -1,3 +1,25 @@
+# v1.1.4 - Shared reference database, optional saved tracking and fluid interaction
+
+Portable EXE: embedded, SHA-256-verified runtime with atomic first-launch extraction and replaceable Qt DLLs.
+
+- Validated read-only SQLite reference catalogue, packed assets and statically linked database engine.
+- Independent vendor buy/sell lookup with source dates, NULL unknowns and bound queries.
+- Saved player tracking toggle shared by native desktop, phone and Steam-overlay views; coordinates withheld when disabled.
+- Barlow typography, finite control feedback and animation/per-frame allocation reductions.
+- Web/Steam QR links work without a LAN adapter; phone pairing still needs an available LAN address.
+
+- Full-channel amber flow with bounded turbulent streamlines and drifting beads.
+
+- Saved-time gold/silver dial fades with rotating reflections; detached, gravity-driven border droplets.
+
+- Frame-driven graph and clock motion; refresh-aware native border.
+- Auto/SDR/HDR modes with native FP16 scRGB presentation for Qt Quick panels, adjustable paper white, GPU color conversion and explicit SDR fallback. Native Widgets/map and browser surfaces remain SDR.
+
+- Production display: falling-sample flush thresholds, warning lamps, liquid wash, evaporation and one VU wave.
+- Clock menu and Ctrl+Shift+Alt-click: reversible sun/moon preview.
+- Native masked border: 50 fluid profiles, eight droplets maximum, animation-off support.
+- Measurements and game saves stay unchanged. See docs/PRODUCTION_TELEMETRY.md for verified limits.
+
 # v1.1.3 - Item trade lookup correction
 
 - Verified seller catalogues remain searchable before discovering a store; unexplored coordinates stay protected.

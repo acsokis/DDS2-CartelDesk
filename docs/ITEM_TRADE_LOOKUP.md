@@ -21,3 +21,5 @@ The supplied installation contains PAK plus IoStore UTOC/UCAS containers. Merely
 ![Desktop vendor seller lookup](../media/screenshots/web-vendor-sellers.png)
 
 ![Phone vendor seller lookup](../media/screenshots/companion-vendor-sellers.png)
+
+The current application loads its shared reference catalogue from the validated packed SQLite database. See [database and tracking](REFERENCE_DATABASE.md). A read-only index scan has now confirmed the installed ShopDatabase, ItemDatabase and LootPoolDatabase asset names; their rows remain undecoded.

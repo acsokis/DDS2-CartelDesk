@@ -1,4 +1,4 @@
-# DDS2 CartelDesk media kit — v1.1.1
+# DDS2 CartelDesk media kit — v1.1.4
 
 [Download the latest Windows release](https://github.com/acsokis/DDS2-CartelDesk/releases/latest) · [Project](https://github.com/acsokis/DDS2-CartelDesk)
 
@@ -40,7 +40,7 @@ Map and data from drugdealersim.com
 Unofficial companion. Not endorsed by or affiliated with drugdealersim.com, TGS, ByteRunners or Movie Games SA. The wiki's permission covers its map render and curation, not underlying game IP or contributed guide prose. Currency: Bolivars (B). The wiki is being audited; consult the live site for current figures. Reference re-sync is planned for 2026-10-20. Material will be removed if the wiki requests it.
 
 
-Latest update (v1.1.1): independent viewport scrolling in desktop navigation and content; readable recipe rows and wrapping action controls; visible source-to-target network arrows outside the fog mask; acquisition references matched across same-name item variants; saved courier positions and selectable hideout destinations for pickup/delivery planning. Quantities and prices absent from the reference remain unknown. Courier routes are greedy straight-line estimates, not road navigation or confirmed live player positions. Map and reference data from drugdealersim.com (https://drugdealersim.com). No endorsement or affiliation with TGS, ByteRunners or Movie Games SA.
+Latest update (v1.1.4): independent viewport scrolling in desktop navigation and content; readable recipe rows and wrapping action controls; visible source-to-target network arrows outside the fog mask; acquisition references matched across same-name item variants; saved courier positions and selectable hideout destinations for pickup/delivery planning. Quantities and prices absent from the reference remain unknown. Courier routes are greedy straight-line estimates, not road navigation or confirmed live player positions. Map and reference data from drugdealersim.com (https://drugdealersim.com). No endorsement or affiliation with TGS, ByteRunners or Movie Games SA.
 
 ## v1.1.2 Operations update
 
@@ -54,3 +54,15 @@ Latest update (v1.1.1): independent viewport scrolling in desktop navigation and
 - [Phone vendor seller lookup](screenshots/companion-vendor-sellers.png)
 
 Verified seller catalogues are searchable without requiring a discovered map position. Buyer coverage remains partial; price-only quotations do not prove acceptance. Map and reference data from [drugdealersim.com](https://drugdealersim.com). No endorsement or affiliation is implied.
+
+## Local production effects preview
+
+[Warning](production-flush-warning.png), [liquid wash](production-flush-wash.png), [evaporation](production-flush-evaporate.png), and [VU wave](production-flush-vu.png) are cropped Windows Qt test-fixture captures. They illustrate decorative stages, not live measured production or completed output. Current local build only; not yet included in published v1.1.3.
+
+[Detached liquid-border droplets](border-dripping.png): transparent Windows test capture of the decorative layer, showing attached resin and falling beads.
+
+The current flush captures also show the full-channel liquid and bounded turbulent streamlines. PNG captures are SDR illustrations and cannot demonstrate physical HDR brightness.
+
+## Current release highlights
+
+Validated SQLite references, separately evidenced vendor buys/sells, optional saved-player tracking on desktop/phone/overlay, shared shopping logistics, Barlow typography and finite interaction animations. The phone omits the large animated production instrument. Game saves remain read-only; positions are save snapshots, not continuous online telemetry. Direct installed DataTable extraction remains incomplete.
